@@ -6,7 +6,7 @@ MAGENTA es una base de datos automática, que tiene la capacidad de:
   de manglar almacenados dentro de la base de datos especializada: European Nucleotide Archive (ENA).
   B)
   C)
-  
+	
 
   A) MAGENTA como un software que busca, clasifica y descarga datos:
 
