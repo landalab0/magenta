@@ -1,15 +1,5 @@
 //Script#0
 
-Antes de ejecutarlo , obtener permisos de root : sudo su
-
-Ejecutarlo de la siguiente manera:
-
-Primero, Crear carpeta /databases/MAGENTA/MAGENTA_EXE y guardar todos los scripts ahí
-
-Segundo, chmod a+x /databases/MAGENTA/MAGENTA_EXE/MAGENTA.sh
-
-Tercero, nohup sh /databases/MAGENTA/MAGENTA_EXE/MAGENTA.sh > /databases/MAGENTA/MAGENTA_EXE/MAGENTA_DB_nohup 2>&1 &
-
 #!/bin/bash
 
 mkdir /databases/MAGENTA/MAGENTA_DB
