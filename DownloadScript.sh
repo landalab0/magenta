@@ -1,5 +1,3 @@
-//Script#2
-
 #!/bin/bash
 
 mkdir /databases/MAGENTA/MAGENTA_DB/Data/Amplicon_SRR  /databases/MAGENTA/MAGENTA_DB/Data/RNA_S_SRR  /databases/MAGENTA/MAGENTA_DB/Data/WGS_SRR
