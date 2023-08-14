@@ -1,5 +1,3 @@
-//Script#1
-
 #!/bin/bash
 
 curl "https://www.ebi.ac.uk/ena/browser/api/tsv/textsearch?domain=project&query=mangrove%20metagenome&format=tsv"  | cut -f1 | sed -e 's|["'\'']||g' | while read line; do curl "https://www.ebi.ac.uk/ena/portal/api/search?result=read_study&query=study_accession=$line&fields=all" >> /databases/MAGENTA/MAGENTA_DB/Metadata/read_study_metadata; done
