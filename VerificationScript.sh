@@ -1,5 +1,3 @@
-//Script#3
-
 #!/bin/bash
 
 cat /databases/MAGENTA/MAGENTA_DB/Scripts/amplicon.sh | awk -F'/' '{ print $NF }' | while read line; do [ ! -f /databases/MAGENTA/MAGENTA_DB/Data/Amplicon_SRR/$line ] &&  echo $line >> /databases/MAGENTA/MAGENTA_DB/Metadata/amplicon_download_verification; done
