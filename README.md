@@ -19,7 +19,7 @@ MAGENTA es una base de datos automática, que tiene la capacidad de:
       - Antes de ejecutarlo, 
           - Dirigirse a la carpeta en donde se desea crear la base de datos MAGENTA: cd /databases/MAGENTA
           - Obtener permisos de root : sudo su ....
-          - Descargar los scripts de git: git clone https://github.com/landalab0/magenta.git (se crea carpeta magenta con los scripts adentro)
+          - Descargar los scripts de git: git clone https://github.com/landalab0/magenta.git (se crea carpeta "magenta" con los scripts adentro auto)
           - Dar permisos de ejecución a MAGENTA.sh : chmod a+x MAGENTA.sh
       - Al ejecutarlo,
           - Ejecutarlo con : nohup sh MAGENTA.sh > MAGENTA_DB_nohup 2>&1 &
