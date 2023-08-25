@@ -10,7 +10,7 @@ MAGENTA es una base de datos automática, que tiene la capacidad de:
 
   A) MAGENTA como un software que busca, clasifica y descarga datos:
 
-  Script #0: MAGENTA.sh //Sin funcionar, no se está utilizando por el momento
+  Script #0: MAGENTA.sh 
     SuperScript cuyo principal objetivo es adecuar el ambiente de Magenta como base de datos (crea carpetas, da permiso de ejecución, etc)
     y correr posteriores scripts.
 
