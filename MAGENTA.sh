@@ -1,12 +1,14 @@
 #!/bin/bash
 
-mkdir /databases/MAGENTA/MAGENTA_DB
+path=/databases
 
-mkdir /databases/MAGENTA/MAGENTA_DB/Data /databases/MAGENTA/MAGENTA_DB/Metadata /databases/MAGENTA/MAGENTA_DB/Scripts
+mkdir $path/MAGENTA/MAGENTA_DB
 
-chmod a+x /databases/MAGENTA/magenta/Search_and_ClassifScript.sh /databases/MAGENTA/magenta/DownloadScript.sh /databases/MAGENTA/magenta/VerificationScript.sh
+mkdir $path/MAGENTA/MAGENTA_DB/Data $path/MAGENTA/MAGENTA_DB/Metadata $path/MAGENTA/MAGENTA_DB/Scripts
 
-nohup sh /databases/MAGENTA/magenta/Search_and_ClassifScript.sh  > /databases/MAGENTA/magenta/Search_and_Classif_nohup 2>&1 & && nohup sh /databases/MAGENTA/magenta/DownloadScript.sh  > /databases/MAGENTA/magenta/Download_nohup 2>&1 & && nohup sh /databases/MAGENTA/magenta/VerificationScript.sh  > /databases/MAGENTA/magenta/Verification_nohup 2>&1 &
+chmod a+x $path/MAGENTA/magenta/Search_and_ClassifScript.sh $path/MAGENTA/magenta/DownloadScript.sh $path/MAGENTA/magenta/VerificationScript.sh
+
+nohup sh $path/MAGENTA/magenta/Search_and_ClassifScript.sh  > $path/MAGENTA/magenta/Search_and_Classif_nohup 2>&1 & && nohup sh $path/MAGENTA/magenta/DownloadScript.sh  > $path/MAGENTA/magenta/Download_nohup 2>&1 & && nohup sh $path/MAGENTA/magenta/VerificationScript.sh  > $path/MAGENTA/magenta/Verification_nohup 2>&1 &
 
 
 
