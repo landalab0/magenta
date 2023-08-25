@@ -1,4 +1,6 @@
-# MAGENTA (Recomendación: leerse en modo "CODE" para una mayor comprensión)
+# MAGENTA 
+
+(Recomendación: leerse en modo "CODE" para una mayor comprensión)
 
 MAGENTA es una base de datos automática, que tiene la capacidad de:
 
