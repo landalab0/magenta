@@ -1,41 +1,9 @@
 # MAGENTA 
 
-(Recomendación: leerse en modo "CODE" para una mayor comprensión)
+Branch for the re-structure of the "MAGENTA" main branch.
 
-MAGENTA es una base de datos automática, que tiene la capacidad de:
+This first stage only contains the refactor of the 3 original scripts by Erika, useful metadata to start working, and a basic plot function with external libraries.
 
-  A) Buscar, clasificar y descargar los datos “crudos” (archivos .fastq) de proyectos enfocados al estudio de ecosistemas
-  de manglar almacenados dentro de la base de datos especializada: European Nucleotide Archive (ENA).
-  B)
-  C)
-	
+Additional scripts and functions (Amplicon analysis, more metadata, graphical parsing, etc.) will be added at a future date.
 
-  A) MAGENTA como un software que busca, clasifica y descarga datos:
-
-  Script #0: MAGENTA.sh 
-    SuperScript cuyo principal objetivo es adecuar el ambiente de Magenta como base de datos (crea carpetas, da permiso de ejecución, etc)
-    y correr posteriores scripts.
-
-    Algunos puntos a tomar en cuenta ANTES de correr MAGENTA.sh:
-    En terminal:
-      - Antes de ejecutarlo, 
-          - Dirigirse a la carpeta en donde se desea crear la base de datos MAGENTA: cd /databases/MAGENTA
-          - Obtener permisos de root : sudo su ....
-          - Descargar los scripts de git: git clone https://github.com/landalab0/magenta.git (se crea carpeta "magenta" con los scripts adentro auto)
-          - Dar permisos de ejecución a MAGENTA.sh : chmod a+x MAGENTA.sh
-      - Al ejecutarlo,
-          - Ejecutarlo con : nohup sh MAGENTA.sh > MAGENTA_DB_nohup 2>&1 &
-
-
-  Script #1: Search_and_ClassifScript.sh
-    Script que ENCUENTRA los proyectos, los ORGANIZA con base en el tipo de análisis (WGS, AMPLICON, RNA_S), y OBTIENE su metadata.
-    
-  
-  Script #2: DownloadScript.sh
-    Script que DESCARGA los datos crudos (los datos "sin procesar"; es decir, los archivos .fastq) de cada proyecto.
-
-    
-  Script #3: VerificationScript.sh
-    Script que, despúes de la descarga, VERIFICA en la base de datos los DATOS REALES descargados y, REDESCARGA los datos faltantes
-    si fuera el caso.
-  
+Also, you never run the data_download.sh script, you can use the dummy sequence on /playground if you want to use an example set of sequences.
