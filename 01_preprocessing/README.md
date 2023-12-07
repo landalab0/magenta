@@ -1,9 +1,6 @@
 # Preprocessing
 
-This directory contains scripts for the preprocessing stage of the
-[CAMDA 2023](http://camda.info/) challenge.
-
-Antimicrobial resistance and taxonomic classification data for CAMDA 2023 is
+Antimicrobial resistance and taxonomic classification data for Landalab0 is
 published at Zenodo:
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7905440.svg)](https://doi.org/10.5281/zenodo.7905440)
